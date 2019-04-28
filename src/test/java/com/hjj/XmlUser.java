@@ -5,7 +5,6 @@ import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.Test;
-import org.mybatis.spring.SqlSessionTemplate;
 
 import java.io.InputStream;
 import java.util.List;
@@ -15,7 +14,7 @@ import java.util.List;
  * @Date: 2019/04/25 11:08
  * @Description:
  */
-public class UserTest {
+public class XmlUser {
 
 
     @Test
@@ -23,7 +22,7 @@ public class UserTest {
         //mybatis的配置文件
         String resource = "conf.xml";
         //使用类加载器加载mybatis的配置文件（它也加载关联的映射文件）
-        InputStream is = UserTest.class.getClassLoader().getResourceAsStream(resource);
+        InputStream is = XmlUser.class.getClassLoader().getResourceAsStream(resource);
         //构建sqlSession的工厂
         SqlSessionFactory sessionFactory = new SqlSessionFactoryBuilder().build(is);
         //使用MyBatis提供的Resources类加载mybatis的配置文件（它也加载关联的映射文件）
@@ -40,6 +39,7 @@ public class UserTest {
         String statement = "com.hjj.model.userMapper.getUser";//映射sql的标识字符串
         //执行查询返回一个唯一user对象的sql
 //        User user = session.selectOne(statement, 2);
+
         List<User> objects = session.selectList("com.hjj.model.userMapper.getAllUser");
         System.out.println(objects);
     }
