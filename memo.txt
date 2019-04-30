@@ -1,0 +1,13 @@
+MyBatis入门基础(一)：http://www.cnblogs.com/selene/p/4604605.html
+
+超详细MyBatis入门讲解：https://blog.csdn.net/endlessseaofcrow/article/details/80410933
+
+MyBatis学习总结(一)——MyBatis快速入门：https://www.cnblogs.com/xdp-gacl/p/4261895.html
+
+mybatis xml和接口注解 两种方式：https://blog.csdn.net/suchahaerkang/article/details/80230613
+
+mybatis spring 全注解配置：https://blog.51cto.com/jtech/2338035
+
+spring与mybatis三种整合方法：https://www.cnblogs.com/wangmingshun/p/5674633.html
+
+mybatis与spring的整合(使用接口实现crud)：https://www.cnblogs.com/sevenlin/p/mybatis_spring.html
